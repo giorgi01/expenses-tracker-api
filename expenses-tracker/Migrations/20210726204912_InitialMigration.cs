@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace expenses_tracker.Migrations
+namespace ExpensesTracker.Migrations
 {
     public partial class InitialMigration : Migration
     {

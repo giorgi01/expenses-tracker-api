@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using expenses_tracker.Data;
+using ExpensesTracker.Data;
 
-namespace expenses_tracker.Migrations
+namespace ExpensesTracker.Migrations
 {
     [DbContext(typeof(DataContext))]
     [Migration("20210726204912_InitialMigration")]

@@ -1,4 +1,4 @@
-﻿namespace expenses_tracker.Models
+﻿namespace ExpensesTracker.Models
 {
     public enum TransactionType
     {

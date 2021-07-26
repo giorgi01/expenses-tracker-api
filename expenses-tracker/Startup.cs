@@ -1,4 +1,5 @@
-using expenses_tracker.Data;
+using ExpensesTracker.Data;
+using ExpensesTracker.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -15,7 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace expenses_tracker
+namespace ExpensesTracker
 {
     public class Startup
     {
@@ -30,6 +31,7 @@ namespace expenses_tracker
         {
             services.AddDbContext<DataContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<DataContext>();
+            services.AddScoped<ITransactionRepository, TransactionRepository>();
             services.AddControllers();
         }
 

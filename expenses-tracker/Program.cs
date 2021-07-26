@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace expenses_tracker
+namespace ExpensesTracker
 {
     public class Program
     {
